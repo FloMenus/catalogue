@@ -7,10 +7,9 @@ import NotFound from './pages/NotFound'
 const App = () => {
   return (
     <BrowserRouter>
-    <Home />
     <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Film/title" element={<Film />} />
+        <Route path="/Film/:id" element={<Film />} />
         <Route path="/NotFound" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
